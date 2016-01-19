@@ -11,7 +11,7 @@ module Tcramer
         %Q{
 desc 'Manage all the things'
 task :manage do
-  puts "Mandatory fun!"
+  puts Tcramer::ISMS.sample
 end
         }
       end

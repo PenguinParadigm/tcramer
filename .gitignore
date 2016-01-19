@@ -3,4 +3,5 @@ log/*.log
 pkg/
 .internal_test_app
 .ruby-*
+.rake_t_cache
 Gemfile.lock
