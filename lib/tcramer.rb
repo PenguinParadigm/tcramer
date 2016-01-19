@@ -6,5 +6,6 @@ module Tcramer
     'Mandatory fun!',
     'Agile groove',
     '🐹',
+    'That's a great question, what do YOU think?'
   ]
 end
