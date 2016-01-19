@@ -1,0 +1,6 @@
+.bundle/
+log/*.log
+pkg/
+.internal_test_app
+.ruby-*
+Gemfile.lock
