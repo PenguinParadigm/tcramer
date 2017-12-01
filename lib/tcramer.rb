@@ -3,6 +3,7 @@ require "tcramer/engine"
 
 module Tcramer
   ISMS = [
+    'Why not?',
     'Mandatory fun!',
     'Agile groove',
     '🐹',
