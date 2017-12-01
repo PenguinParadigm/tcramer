@@ -8,5 +8,6 @@ module Tcramer
     'Agile groove',
     '🐹',
     "That's a great question, what do YOU think?"
+    "What's your opinion of walruses?"
   ]
 end
