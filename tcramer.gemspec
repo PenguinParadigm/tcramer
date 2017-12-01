@@ -21,4 +21,16 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "engine_cart"
+
+  s.post_install_message = %q{
+    tcramer is in the house!!!
+          🤠
+　　　　　🐧🐧🐧
+　　　　🐧 　🐧　🐧
+　　　👇🏽　  🐧🐧　👇🏽
+　　　　　🐧　  🐧
+　　　　　🐧　　🐧
+　　　　　 👢　　👢
+    howdy. I'm the sheriff of rake tasks.
+  }
 end
