@@ -20,7 +20,7 @@ end
 RSpec::Core::RakeTask.new(:spec)
 
 desc 'Generate the engine_cart and run specs'
-task ci: :rubocop do
+task ci: [:rubocop, 'engine_cart:generate'] do
   puts 'running continuous integration'
   Rake::Task['spec'].invoke
 end
