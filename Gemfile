@@ -7,6 +7,11 @@ source 'https://rubygems.org'
 # development dependencies will be added by default to the :development group.
 gemspec
 
+group :development, :test do
+  gem 'coveralls', require: false
+  gem 'simplecov', require: false
+end
+
 # BEGIN ENGINE_CART BLOCK
 # engine_cart: 1.2.0
 # engine_cart stanza: 0.10.0
