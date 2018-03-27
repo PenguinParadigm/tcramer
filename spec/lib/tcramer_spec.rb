@@ -8,8 +8,23 @@ RSpec.describe Tcramer do
   end
 
   describe '.manage' do
-    subject { described_class.manage }
+    before { allow(Kernel).to receive(:rand).and_return(rand_integer) }
 
-    it { is_expected.to be_in described_class::ISMS }
+    context 'when zalgoized' do
+      let(:rand_integer) { 0 }
+
+      it 'uses the Zalgo library to render one ism' do
+        expect(Zalgo).to receive(:he_comes).once
+        described_class.manage
+      end
+    end
+
+    context 'when not zalgoized' do
+      subject { described_class.manage }
+
+      let(:rand_integer) { 1 }
+
+      it { is_expected.to be_in described_class::ISMS }
+    end
   end
 end

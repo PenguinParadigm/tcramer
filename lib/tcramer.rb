@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 require 'tcramer/engine'
+Kernel.silence_warnings do
+  require 'zalgo'
+end
 
 # Tcramer writes rake tasks!
 module Tcramer
@@ -15,10 +18,27 @@ module Tcramer
     'Okay, but if you did have a spec, how long would it take?',
     '(entering a room) dun dun DUN',
     'Nailed it!',
-    'Uh oh.'
+    'Uh oh.',
+    %{
+                   __ ___'
+                 .'. -- . '.
+                /U)  __   (O|
+               /.'  ()()   '.\\._
+             .',/;,_.--._.;;) . '--..__
+            /  ,///|.__.|.\\\\\\  \\ '.  '.''---..___
+           /'._ '' ||  ||  '' _'\\  :   \\   '   . '.
+          /        ||  ||        '.,    )   )   :  \\
+         :'-.__ _  ||  ||   _ __.' _\\_ .'  '   '   ,)
+         (          '  |'        ( __= ___..-._ ( (.\\
+         ('\\      .___ ___.      /'.___=          \\.\\.\\
+         \\\\\\-..____________..-''
+    }
   ].freeze
 
   def self.manage
-    ISMS.sample
+    selected_ism = ISMS.sample
+    # 80% chance of returning string unzalgoized
+    return selected_ism if Kernel.rand(5).positive?
+    Zalgo.he_comes(selected_ism)
   end
 end

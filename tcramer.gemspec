@@ -5,6 +5,7 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 # Maintain your gem's version:
 require 'tcramer/version'
 
+# rubocop:disable Metrics/BlockLength
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = 'tcramer'
@@ -19,6 +20,7 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR)
 
   s.add_dependency 'rails', '>= 4.2'
+  s.add_dependency 'zalgo'
 
   s.add_development_dependency 'engine_cart'
   s.add_development_dependency 'rspec'
@@ -37,3 +39,4 @@ Gem::Specification.new do |s|
     howdy. I'm the sheriff of rake tasks.
   "
 end
+# rubocop:enable Metrics/BlockLength
