@@ -1,8 +1,8 @@
 # Tcramer
 
-[![Gem Version](https://badge.fury.io/rb/tcramer.svg)](http://badge.fury.io/rb/tcramer)
-[![Build Status](https://travis-ci.org/PenguinParadigm/tcramer.svg?branch=master)](https://travis-ci.org/PenguinParadigm/tcramer)
-[![Coverage Status](https://coveralls.io/repos/github/PenguinParadigm/tcramer/badge.svg?branch=master)](https://coveralls.io/github/PenguinParadigm/tcramer?branch=master)
+[![Gem](https://img.shields.io/gem/v/tcramer.svg)](https://rubygems.org/gems/tcramer)
+[![Travis](https://img.shields.io/travis/PenguinParadigm/tcramer.svg)](https://travis-ci.org/PenguinParadigm/tcramer)
+[![Coveralls github](https://img.shields.io/coveralls/github/PenguinParadigm/tcramer.svg)](https://coveralls.io/github/PenguinParadigm/tcramer?branch=master)
 
 `Tcramer` writes rake tasks!
 
