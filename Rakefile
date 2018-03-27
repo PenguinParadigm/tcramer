@@ -8,9 +8,21 @@ end
 
 require 'engine_cart/rake_task'
 require 'rspec/core/rake_task'
+require 'rubocop/rake_task'
 
 Bundler::GemHelper.install_tasks
 
+desc 'Run style checker'
+RuboCop::RakeTask.new(:rubocop) do |task|
+  task.fail_on_error = true
+end
+
 RSpec::Core::RakeTask.new(:spec)
 
-task default: :spec
+desc 'Generate the engine_cart and run specs'
+task ci: :rubocop do
+  puts 'running continuous integration'
+  Rake::Task['spec'].invoke
+end
+
+task default: :ci
