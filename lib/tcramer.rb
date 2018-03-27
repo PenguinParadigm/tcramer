@@ -2,6 +2,7 @@
 
 require 'tcramer/engine'
 
+# Tcramer writes rake tasks!
 module Tcramer
   ISMS = [
     'Why not?',
@@ -16,4 +17,8 @@ module Tcramer
     'Nailed it!',
     'Uh oh.'
   ].freeze
+
+  def self.manage
+    ISMS.sample
+  end
 end
