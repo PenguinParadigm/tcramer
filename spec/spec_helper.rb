@@ -11,11 +11,7 @@ if coverage_needed?
   require 'coveralls'
   SimpleCov.root(File.expand_path('..', __dir__))
   SimpleCov.formatter = Coveralls::SimpleCov::Formatter
-  SimpleCov.start('rails') do
-    add_filter '/.internal_test_app'
-    add_filter '/lib/generators'
-    add_filter '/spec'
-  end
+  SimpleCov.start
   SimpleCov.command_name 'spec'
 end
 
