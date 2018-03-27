@@ -1,4 +1,3 @@
-
 # frozen_string_literal: true
 
 require 'tcramer/engine'
@@ -16,5 +15,5 @@ module Tcramer
     '(entering a room) dun dun DUN',
     'Nailed it!',
     'Uh oh.'
-  ]
+  ].freeze
 end
