@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Tcramer do
   describe 'version constant' do
     subject { described_class.const_get('VERSION') }

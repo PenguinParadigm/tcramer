@@ -1,5 +1,7 @@
-# coding: utf-8
-require "tcramer/engine"
+
+# frozen_string_literal: true
+
+require 'tcramer/engine'
 
 module Tcramer
   ISMS = [
@@ -12,5 +14,5 @@ module Tcramer
     'How soon before this is ready for production?',
     'Okay, but if you did have a spec, how long would it take?',
     '(entering a room) dun dun DUN'
-  ]
+  ].freeze
 end

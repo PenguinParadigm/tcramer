@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Tcramer::Engine do
   describe 'inheritance' do
     subject { described_class.ancestors }

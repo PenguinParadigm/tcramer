@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 # Declare your gem's dependencies in tcramer.gemspec.
@@ -8,9 +10,13 @@ gemspec
 # BEGIN ENGINE_CART BLOCK
 # engine_cart: 1.2.0
 # engine_cart stanza: 0.10.0
-# the below comes from engine_cart, a gem used to test this Rails engine gem in the context of a Rails app.
-file = File.expand_path('Gemfile', ENV['ENGINE_CART_DESTINATION'] || ENV['RAILS_ROOT'] || File.expand_path('.internal_test_app', File.dirname(__FILE__
-)))
+# the below comes from engine_cart, a gem used to test this Rails engine gem in
+#   the context of a Rails app.
+file = File.expand_path('Gemfile',
+                        ENV['ENGINE_CART_DESTINATION'] ||
+                        ENV['RAILS_ROOT'] ||
+                        File.expand_path('.internal_test_app',
+                                         File.dirname(__FILE__)))
 if File.exist?(file)
   begin
     eval_gemfile file
@@ -19,8 +25,10 @@ if File.exist?(file)
     Bundler.ui.warn e.message
   end
 else
-  Bundler.ui.warn "[EngineCart] Unable to find test application dependencies in #{file}, using placeholder dependencies"
+  Bundler.ui.warn '[EngineCart] Unable to find test application dependencies ' \
+    "in #{file}, using placeholder dependencies"
 
+  # rubocop:disable Bundler/DuplicatedGem
   if ENV['RAILS_VERSION']
     if ENV['RAILS_VERSION'] == 'edge'
       gem 'rails', github: 'rails/rails'
@@ -32,11 +40,12 @@ else
 
   case ENV['RAILS_VERSION']
   when /^4.2/
+    gem 'coffee-rails', '~> 4.1.0'
     gem 'responders', '~> 2.0'
     gem 'sass-rails', '>= 5.0'
-    gem 'coffee-rails', '~> 4.1.0'
   when /^4.[01]/
     gem 'sass-rails', '< 5.0'
   end
+  # rubocop:enable Bundler/DuplicatedGem
 end
 # END ENGINE_CART BLOCK
