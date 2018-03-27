@@ -28,7 +28,7 @@ First, run the installation generator:
 
 This will write a new, mission-critical rake task into your project called `manage.rake`. You can now invoke the `Tcramer` management task by running:
 
-    $ rake tcramer:manage
+    $ rake manage
 
 ## Contributing
 
