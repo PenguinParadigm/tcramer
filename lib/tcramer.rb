@@ -13,6 +13,8 @@ module Tcramer
     "What's your opinion of walruses?",
     'How soon before this is ready for production?',
     'Okay, but if you did have a spec, how long would it take?',
-    '(entering a room) dun dun DUN'
-  ].freeze
+    '(entering a room) dun dun DUN',
+    'Nailed it!',
+    'Uh oh.'
+  ]
 end
