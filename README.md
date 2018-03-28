@@ -30,6 +30,10 @@ This will write a new, mission-critical rake task into your project called `mana
 
     $ rake manage
 
+Another rake task that will deliver a sharp shot in the arm to your organization is written to `motivate.rake`. You too can be motivated to exceed performance expectations, thanks to `Tcramer`, by running:
+
+    $ rake motivate
+
 ## Contributing
 
 1. Fork it
