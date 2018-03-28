@@ -7,6 +7,12 @@ RSpec.describe Tcramer do
     it { is_expected.to be_a Array }
   end
 
+  describe 'face' do
+    subject { described_class.const_get('FACE') }
+
+    it { is_expected.to be_a String }
+  end
+
   describe '.manage' do
     before { allow(Kernel).to receive(:rand).and_return(rand_integer) }
 
@@ -26,5 +32,11 @@ RSpec.describe Tcramer do
 
       it { is_expected.to be_in described_class::ISMS }
     end
+  end
+
+  describe '.motivate' do
+    subject { described_class.motivate }
+
+    it { is_expected.to eq described_class::FACE }
   end
 end

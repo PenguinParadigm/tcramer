@@ -19,5 +19,16 @@ end
         )
       end
     end
+
+    def write_your_second_rake_task
+      rakefile 'motivate.rake' do
+        %(
+desc 'Motivate your employees'
+task :motivate do
+  puts Tcramer.motivate
+end
+        )
+      end
+    end
   end
 end
