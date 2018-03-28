@@ -18,6 +18,14 @@ task :manage do
 end
         )
       end
+      rakefile 'motivate.rake' do
+        %(
+desc 'Motivate your employees'
+task :motivate do
+  puts Tcramer.motivate
+end
+        )
+      end
     end
   end
 end
