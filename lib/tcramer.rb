@@ -19,6 +19,9 @@ module Tcramer
     '(entering a room) dun dun DUN',
     'Nailed it!',
     'Uh oh.',
+    'Typed with my thumbs.',
+    'Could you give a 5 minute demo on that?',
+    'That was an interesting choice.',
     %{
                    __ ___'
                  .'. -- . '.
