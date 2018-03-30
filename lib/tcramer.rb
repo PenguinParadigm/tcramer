@@ -22,6 +22,7 @@ module Tcramer
     'Typed with my thumbs.',
     'Could you give a 5 minute demo on that?',
     'That was an interesting choice.',
+    'APIs! APIs! APIs!',
     %{
                    __ ___'
                  .'. -- . '.
