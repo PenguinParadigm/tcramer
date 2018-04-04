@@ -23,6 +23,7 @@ module Tcramer
     'Could you give a 5 minute demo on that?',
     'That was an interesting choice.',
     'APIs! APIs! APIs!',
+    'The reward for good work is more work.',
     %{
                    __ ___'
                  .'. -- . '.
