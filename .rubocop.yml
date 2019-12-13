@@ -5,3 +5,15 @@ AllCops:
 Metrics/BlockLength:
   Exclude:
     - spec/lib/**/*.rb
+
+Metrics/LineLength:
+  Exclude:
+    - Gemfile
+
+Bundler/DuplicatedGem:
+  Exclude:
+    - Gemfile
+
+Bundler/OrderedGems:
+  Exclude:
+    - Gemfile

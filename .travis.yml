@@ -10,8 +10,8 @@ before_install:
   - gem install bundler
 
 rvm:
-  - 2.5.0
+  - 2.6.4
 
 env:
   global:
-    - ENGINE_CART_RAILS_OPTIONS='--skip-git --skip-bundle --skip-listen --skip-spring --skip-yarn --skip-keeps --skip-action-cable --skip-coffee --skip-puma --skip-test'
+    - ENGINE_CART_RAILS_OPTIONS='--skip-git --skip-bundle --skip-listen --skip-spring --skip-yarn --skip-keeps --skip-action-cable --skip-coffee --skip-puma --skip-test --skip-sprockets'

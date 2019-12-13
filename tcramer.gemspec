@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.files       = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR)
 
-  s.add_dependency 'rails', '>= 4.2'
+  s.add_dependency 'rails', '~> 5.2'
   s.add_dependency 'zalgo'
 
   s.add_development_dependency 'engine_cart'
